@@ -14,6 +14,7 @@ import logoManulife from "@/assets/clients/manulife.png";
 
 const NAV_LINKS = [
 { label: "Services", href: "#services" },
+{ label: "AI", href: "#ai" },
 { label: "Work", href: "#work" },
 { label: "Testimonials", href: "#testimonials" },
 { label: "Values", href: "#values" },
@@ -36,22 +37,32 @@ const SERVICES = [
 {
   icon:
   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 2L2 7l10 5 10-5-10-5z" /><path d="M2 17l10 5 10-5" /><path d="M2 12l10 5 10-5" />
+        <circle cx="12" cy="12" r="10" /><path d="M2 12h20M12 2a15 15 0 010 20 15 15 0 010-20z" />
       </svg>,
 
-  title: "Product Delivery",
-  summary: "From discovery to production — fast, tested, documented.",
-  bullets: ["Go from 0→1 in weeks, not quarters", "Ownership handoff from day one"]
+  title: "Websites",
+  summary: "Marketing sites, e-commerce, and web apps that load fast and convert.",
+  bullets: ["Custom design, built around your brand", "Fast, SEO-friendly, and mobile-ready"]
 },
 {
   icon:
   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+        <rect x="7" y="2" width="10" height="20" rx="2" /><path d="M11 18h2" />
       </svg>,
 
-  title: "AI Enablement",
-  summary: "Practical AI integration that creates measurable leverage.",
-  bullets: ["LLM pipelines, RAG, agents — production-grade", "Augment your team's throughput with AI tooling"]
+  title: "Mobile Apps",
+  summary: "iOS and Android apps built for real users, not just demos.",
+  bullets: ["Native and cross-platform builds", "Smooth, app-store-ready experiences"]
+},
+{
+  icon:
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="2" y="4" width="20" height="14" rx="2" /><path d="M8 21h8M12 18v3" />
+      </svg>,
+
+  title: "Native Software",
+  summary: "Desktop tools and internal software built for how your team actually works.",
+  bullets: ["Custom internal tools and dashboards", "Replaces spreadsheets and manual work"]
 },
 {
   icon:
@@ -59,9 +70,19 @@ const SERVICES = [
         <rect x="2" y="3" width="20" height="14" rx="2" /><path d="M8 21h8m-4-4v4" />
       </svg>,
 
-  title: "Architecture & Scale",
-  summary: "Systems designed to grow without rewriting everything.",
-  bullets: ["Cloud-native, horizontally scalable design", "Performance, observability, and cost governance"]
+  title: "Architecture & Systems",
+  summary: "Backend systems designed to grow without falling over.",
+  bullets: ["Cloud-native, built to scale with demand", "Secure, reliable, and easy to maintain"]
+},
+{
+  icon:
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 2L2 7l10 5 10-5-10-5z" /><path d="M2 17l10 5 10-5" /><path d="M2 12l10 5 10-5" />
+      </svg>,
+
+  title: "Platforms & Products",
+  summary: "Full products, from first idea to paying customers.",
+  bullets: ["Go from 0 to 1 in weeks, not quarters", "Production-ready, not just a prototype"]
 },
 {
   icon:
@@ -70,8 +91,95 @@ const SERVICES = [
       </svg>,
 
   title: "Rescue & Turnaround",
-  summary: "Stalled project? We stabilize, assess, and ship.",
-  bullets: ["Code audits and technical debt roadmap", "Incremental recovery with zero disruption"]
+  summary: "Stalled project? We stabilize it, then ship.",
+  bullets: ["Code audits and a clear technical debt roadmap", "Incremental fixes with zero disruption"]
+}];
+
+
+const AI_CAPABILITIES = [
+{
+  icon:
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="3" y="11" width="18" height="10" rx="2" /><circle cx="12" cy="5" r="2" /><path d="M12 7v4M8 16h.01M16 16h.01" />
+      </svg>,
+
+  title: "AI Agents",
+  summary: "Agents that do real work, not demos.",
+  bullets: [
+  "Lead generation agents that find and qualify prospects for you",
+  "A second brain for your company, one shared source of truth for every team or department",
+  "Optimized to use fewer tokens, so agents stay fast and affordable"]
+
+},
+{
+  icon:
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z" />
+      </svg>,
+
+  title: "Automations",
+  summary: "Eliminate manual busywork across your stack.",
+  bullets: [
+  "Custom workflows built around how your team already works",
+  "Connects to the tools you already use",
+  "Runs in the background, 24/7, no manual triggers"]
+
+},
+{
+  icon:
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="11" cy="11" r="7" /><path d="M21 21l-4.35-4.35" /><path d="M11 8v3l2 2" />
+      </svg>,
+
+  title: "AI-Driven SEO",
+  summary: "AI-first content and search strategy built to rank.",
+  bullets: [
+  "Content built and optimized by AI, so it ranks",
+  "Set up to be found by AI search tools, not just Google",
+  "Tracks what's working and adjusts on its own"]
+
+},
+{
+  icon:
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M3 11l18-8-8 18-2-8-8-2z" />
+      </svg>,
+
+  title: "AI-Driven Marketing Strategy",
+  summary: "Data-backed marketing systems powered by AI.",
+  bullets: [
+  "Campaigns and funnels that run and improve themselves",
+  "AI helps pick the right audience and the right message",
+  "Clear reporting so you always know what's working"]
+
+},
+{
+  icon:
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="8" r="4" /><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8" />
+      </svg>,
+
+  title: "You, Cloned",
+  summary: "A digital version of you that shows up online so you don't have to.",
+  bullets: [
+  "Trained on your voice, style, and expertise",
+  "Built for social media content and strategy",
+  "Keeps posting consistently, even when you're busy running the business"]
+
+},
+{
+  icon:
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
+      </svg>,
+
+  title: "AI Customer Support",
+  summary: "A chatbot trained on your business, ready for any use case.",
+  bullets: [
+  "Answers questions instantly, day or night",
+  "Trained on your product, policies, and tone",
+  "Hands off to a real person the moment it should"]
+
 }];
 
 
@@ -330,9 +438,9 @@ function Hero() {
 
         {/* Headline */}
         <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-foreground leading-[1.08] tracking-tight">
-          You Give a Challenge.
+          The AI-Native Software Studio.
           <br />
-          <span className="text-gradient-accent">We Make It Happen.</span>
+          <span className="text-gradient-accent">You Give a Challenge. We Make It Happen.</span>
         </h1>
 
         {/* Subheadline */}
@@ -414,11 +522,11 @@ function Services() {
           What We Build
         </h2>
         <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-          Four focused disciplines. One outcome: software that works in production.
+          From your first website to enterprise-grade systems, built right, built fast.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {SERVICES.map((svc) =>
         <article
           key={svc.title}
@@ -445,6 +553,49 @@ function Services() {
             </div>
           </article>
         )}
+      </div>
+    </section>);
+
+}
+
+function AICapabilities() {
+  return (
+    <section id="ai" className="py-24 md:py-32 bg-surface-1 border-y border-border" aria-labelledby="ai-heading">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <SectionLabel>AI Capabilities</SectionLabel>
+          <h2 id="ai-heading" className="font-display text-4xl md:text-5xl font-bold text-foreground mt-4 mb-4">
+            Built AI-Native
+          </h2>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            AI isn't bolted on after the fact, it's how we design, build, and grow every product. We call it <span className="text-foreground font-medium">AItifying</span> a company: getting as much of your business as possible, up to 90%, running on AI.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {AI_CAPABILITIES.map((cap) =>
+          <article
+            key={cap.title}
+            className="group relative border-gradient card-glow rounded-xl p-6 bg-card hover:border-accent/30 transition-all duration-400">
+
+            <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-xl bg-accent/10 border border-accent/20 text-accent group-hover:bg-accent/15 group-hover:border-accent/30 transition-colors mb-4">
+              {cap.icon}
+            </div>
+            <h3 className="font-display text-lg font-semibold text-foreground mb-2">{cap.title}</h3>
+            <p className="text-muted-foreground text-sm leading-relaxed mb-4">{cap.summary}</p>
+            <ul className="space-y-2">
+              {cap.bullets.map((b) =>
+              <li key={b} className="flex items-start gap-2 text-sm text-muted-foreground">
+                  <svg className="w-4 h-4 flex-shrink-0 mt-0.5 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  {b}
+                </li>
+              )}
+            </ul>
+          </article>
+          )}
+        </div>
       </div>
     </section>);
 
@@ -842,6 +993,7 @@ export default function LandingPage() {
         <Hero />
         <ClientsCarousel />
         <Services />
+        <AICapabilities />
         <Work />
         <Testimonials />
         <Values />
