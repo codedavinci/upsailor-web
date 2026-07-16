@@ -31,3 +31,6 @@ dist-ssr
 # Supabase CLI local state
 supabase/.temp
 supabase/.branches
+
+# Claude Code local settings
+.claude/

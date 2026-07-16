@@ -187,23 +187,23 @@ const CASES = [
 {
   industry: "Fintech",
   tag: "Payments Platform",
-  challenge: "A regional payments startup needed to process cross-border transactions under strict compliance requirements with a tight 4-month launch window.",
-  approach: "We designed a microservice-based ledger with idempotent transaction flows, automated KYC hooks, and a real-time dashboard.",
+  challenge: "A regional payments startup needed to process cross-border transactions under strict compliance rules, with only 4 months to launch.",
+  approach: "We built a reliable transaction system with automated compliance checks and a real-time dashboard the team could actually use.",
   result: "Launched on schedule. Processed $2M in volume in month one. Zero compliance incidents."
 },
 {
   industry: "Logistics",
   tag: "Fleet Intelligence",
-  challenge: "A mid-sized fleet operator was running manual dispatch and losing 18% capacity to inefficiency every quarter.",
-  approach: "Built a route-optimization engine with ML-based demand forecasting, driver app, and dispatcher console.",
-  result: "12% reduction in fuel cost. Dispatcher workload halved. ROI achieved in 5 months."
+  challenge: "A mid-sized fleet operator was running dispatch by hand, losing 18% of capacity to inefficiency every quarter.",
+  approach: "We built a route-planning engine with demand forecasting, plus a driver app and a dispatcher console.",
+  result: "12% lower fuel costs. Dispatcher workload cut in half. ROI in 5 months."
 },
 {
   industry: "Marketplace",
   tag: "B2B Commerce",
-  challenge: "A B2B marketplace struggling with onboarding drop-off at 68% and a legacy monolith blocking new features.",
-  approach: "Modular re-architecture, new seller onboarding flow with async verification, and a React component library for the front end.",
-  result: "Onboarding drop-off cut to 31%. Feature release cycle went from 6 weeks to 9 days."
+  challenge: "A B2B marketplace was losing 68% of new sellers during onboarding, and an aging system was blocking new features.",
+  approach: "We rebuilt onboarding to verify sellers in the background instead of making them wait, and modernized the front end so new features ship fast.",
+  result: "Onboarding drop-off cut to 31%. Feature releases went from 6 weeks to 9 days."
 }];
 
 
@@ -230,7 +230,7 @@ const TESTIMONIALS = [
 
 const VALUES = [
 { label: "Ship, then iterate.", body: "We bias toward delivery. A working product teaches more than perfect specs." },
-{ label: "Clarity first.", body: "No hand-waving. We give honest assessments and realistic timelines — always." },
+{ label: "Clarity first.", body: "No hand-waving. We give honest assessments and realistic timelines, always." },
 { label: "You own everything.", body: "Full IP transfer, clean repos, and zero lock-in. It's your software." },
 { label: "Security is non-negotiable.", body: "Authentication, encryption, and secure defaults are built in from line one." },
 { label: "Built to last.", body: "We write for the engineer who inherits it next, not just for the demo." }];
@@ -265,28 +265,52 @@ const PROCESS_STEPS = [
 
 const FAQS = [
 {
-  q: "How do you price engagements?",
-  a: "We offer both time-and-materials (hourly/weekly) and fixed-scope project pricing. After a brief discovery call, we'll recommend what fits your project best. No retainer surprises."
+  q: "What does Upsailor Labs do?",
+  a: "Upsailor Labs is an AI-native software studio based in Dubai, UAE, working with companies worldwide. We design and build websites, mobile apps, custom software, and AI agents, from first idea to a production-ready product."
+},
+{
+  q: "What does AI-native actually mean?",
+  a: "It means AI is part of how we build from day one, not added on at the end. Every project we ship considers where AI agents, automation, or AI-driven features can save your team time and money."
+},
+{
+  q: "Do you only work with companies in the GCC?",
+  a: "No. Our team's experience comes from projects around the world, and we work with companies globally. We recently made Dubai our home base, and we're actively growing our work with companies across the GCC, including Saudi Arabia, Qatar, Kuwait, Bahrain, and Oman."
+},
+{
+  q: "What can you build for us?",
+  a: "Websites, mobile apps for iOS and Android, native and internal software, AI agents, business automations, and the backend architecture to support all of it. If it's software, we can likely build it."
+},
+{
+  q: "How much does a project cost?",
+  a: "It depends on scope. We offer fixed-price projects, hourly engagements, and monthly retainers for ongoing work. We'll recommend what fits after a short discovery call. No surprises."
+},
+{
+  q: "Do you offer monthly retainers?",
+  a: "Yes. Alongside one-off projects, we offer monthly retainers for teams that want an ongoing partner: continuous feature work, maintenance, monitoring, or extra engineering capacity. Retainers are scoped around your priorities each month."
 },
 {
   q: "How long does a typical project take?",
-  a: "MVPs typically take 6–12 weeks. Full product builds range from 3–6 months. We scope carefully upfront so you're not caught off guard."
+  a: "Most MVPs take 6 to 12 weeks. Full product builds usually run 3 to 6 months. We scope carefully upfront so timelines stay realistic."
 },
 {
-  q: "Who owns the IP and code?",
-  a: "You do, completely. All code, designs, and infrastructure configurations are transferred to you at project close. We retain no license or usage rights."
+  q: "Who owns the code once the project is done?",
+  a: "You do, completely. All code, designs, and infrastructure are handed over to you at project close. We keep no license or usage rights."
 },
 {
-  q: "How do you handle security?",
-  a: "Security is part of the build, not a post-launch audit. We follow OWASP guidelines, use secure-by-default configurations, and conduct internal code review for every PR."
+  q: "Do you sign NDAs and handle our data securely?",
+  a: "Yes. We sign NDAs before any detailed discussion, and security is built into every project, not bolted on afterward. We follow OWASP guidelines and review every piece of code before it ships."
 },
 {
-  q: "How do we get started?",
-  a: "Book a 30-minute strategy call. We'll listen, ask the right questions, and tell you honestly whether and how we can help. No hard sells."
+  q: "Can you take over or fix a stalled project?",
+  a: "Yes. Rescue and turnaround work is one of our core services. We start with a code audit, give you an honest assessment, and stabilize the project before shipping new work."
 },
 {
-  q: "What do you need from our side to begin?",
-  a: "A clear problem statement, access to relevant stakeholders, and a point of contact. We take care of the rest. The less you have to manage us, the better we're doing our job."
+  q: "Do you offer support after launch?",
+  a: "Yes. Through a monthly retainer, we stay involved after launch for bug fixes, monitoring, and ongoing improvements. How much support you need is part of the initial scoping conversation."
+},
+{
+  q: "How do we get started with Upsailor Labs?",
+  a: "Book a 30 minute call. We'll listen, ask the right questions, and tell you honestly whether and how we can help. No hard sells."
 }];
 
 
@@ -300,7 +324,7 @@ function Logo() {
       <img
 
         alt="Upsailor Labs logo"
-        className="w-8 h-8 object-contain" src="/lovable-uploads/679cb57d-9820-4120-b5bf-47acd099457e.jpg" />
+        className="w-8 h-8 object-contain" src={upsailorLogo} />
 
       <span className="font-display font-semibold text-lg text-foreground tracking-tight">
         Upsailor <span className="text-muted-foreground font-normal">Labs</span>
@@ -437,10 +461,13 @@ function Hero() {
         </div>
 
         {/* Headline */}
+        <p className="font-display text-lg md:text-xl font-semibold text-accent tracking-tight mb-3">
+          The AI-Native Software Studio
+        </p>
         <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-foreground leading-[1.08] tracking-tight">
-          The AI-Native Software Studio.
+          You Give a Challenge.
           <br />
-          <span className="text-gradient-accent">You Give a Challenge. We Make It Happen.</span>
+          <span className="text-gradient-accent">We Make It Happen.</span>
         </h1>
 
         {/* Subheadline */}
@@ -568,7 +595,7 @@ function AICapabilities() {
             Built AI-Native
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            AI isn't bolted on after the fact, it's how we design, build, and grow every product. We call it <span className="text-foreground font-medium">AItifying</span> a company: getting as much of your business as possible, up to 90%, running on AI.
+            AI isn't bolted on after the fact, it's how we design, build, and grow every product. We call it <span className="text-foreground font-medium">AI-tifying</span> a company: getting as much of your business as possible, up to 90%, running on AI.
           </p>
         </div>
 
@@ -758,14 +785,31 @@ function Process() {
 function FAQ() {
   const [open, setOpen] = useState<number | null>(null);
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": FAQS.map((faq) => ({
+      "@type": "Question",
+      "name": faq.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.a
+      }
+    }))
+  };
+
   return (
     <section id="faq" className="py-24 md:py-32 bg-surface-1 border-y border-border" aria-labelledby="faq-heading">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <div className="max-w-3xl mx-auto px-6">
         <div className="text-center mb-16">
           <SectionLabel>FAQ</SectionLabel>
           <h2 id="faq-heading" className="font-display text-4xl md:text-5xl font-bold text-foreground mt-4 mb-4">
             Common Questions
           </h2>
+          <p className="text-muted-foreground text-lg max-w-xl mx-auto">
+            What companies everywhere usually ask before working with us, with a few extra details for teams in the UAE and the GCC.
+          </p>
         </div>
 
         <div className="space-y-3">
