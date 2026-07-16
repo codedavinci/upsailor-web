@@ -325,7 +325,7 @@ function Hero() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 rounded-full bg-accent/10 border border-accent/20 px-4 py-1.5 mb-8">
           <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-          <span className="text-xs font-medium text-accent">Senior engineering team · Dubai, UAE</span>
+          <span className="text-xs font-medium text-accent">AI-Native · Senior engineering team · Dubai, UAE</span>
         </div>
 
         {/* Headline */}
@@ -336,7 +336,7 @@ function Hero() {
         </h1>
 
         {/* Subheadline */}
-        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">Upsailor Labs builds production-ready products, apps, platforms, and AI systems with the precision and pace that serious companies demand.
+        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">Upsailor Labs is an AI-native software studio building production-ready products, apps, platforms, and AI systems with the precision and pace that serious companies demand.
 
         </p>
 
@@ -356,6 +356,7 @@ function Hero() {
         {/* Trust row */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10 text-sm text-muted-foreground">
           {[
+          { icon: "✦", text: "AI-native from day one" },
           { icon: "✦", text: "Senior-only engineering team" },
           { icon: "✦", text: "Weekly delivery cycles" },
           { icon: "✦", text: "Production-ready, every sprint" }].
