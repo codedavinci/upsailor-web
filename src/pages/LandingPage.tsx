@@ -209,22 +209,22 @@ const CASES = [
 
 const TESTIMONIALS = [
 {
-  quote: "One meeting was all it took for Upsailor to understand exactly what we needed. From proposal to roadmap to delivery, everything was executed flawlessly, zero friction throughout the process.",
-  name: "Marcus Henley",
-  role: "CTO",
-  company: "NovaPay"
+  quote: "One meeting was all it took for Eddie to understand exactly what we needed. From proposal to roadmap to delivery, everything was executed flawlessly, zero friction throughout the process.",
+  name: "Dave",
+  role: "Founder",
+  company: "ToursByLocals"
 },
 {
   quote: "We came in with a half-built mess and they turned it into something we're proud to show investors. Honest, fast, and technically excellent.",
-  name: "Priya Anand",
-  role: "Founder & CEO",
-  company: "BuildMetrics"
+  name: "Malika",
+  role: "Manager",
+  company: "Manulife"
 },
 {
   quote: "The AI integration they built for our ops team saves us roughly 40 hours a week. Practical, well-documented, and the team was a pleasure to work with.",
-  name: "Jordan Wells",
-  role: "VP of Operations",
-  company: "FleetSync"
+  name: "Roger",
+  role: "Senior Architect",
+  company: "Telus"
 }];
 
 
@@ -695,7 +695,7 @@ function Testimonials() {
             <blockquote className="text-foreground/90 text-sm md:text-base leading-relaxed flex-1 mb-6">
               "{t.quote}"
             </blockquote>
-            <figcaption className="hidden flex items-center gap-3 pt-5 border-t border-border">
+            <figcaption className="flex items-center gap-3 pt-5 border-t border-border">
               <div className="w-9 h-9 rounded-full bg-gradient-to-br from-accent/30 to-accent-dim/20 border border-accent/20 flex items-center justify-center text-xs font-bold text-accent">
                 {t.name.split(" ").map((n) => n[0]).join("")}
               </div>
